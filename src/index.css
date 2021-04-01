@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#app {
+  margin: 2em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.calculator {
+  width: 80%;
+  min-width: 280px;
+  border: solid 4px #000;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output {
+  padding: 8px;
+  font-size: 32px;
+  width: 100%;
+  background-color: LightGray;
+  height: 50px;
+  text-align: right;
+}
+
+input,
+.font {
+  font-size: 21px;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+.digit,
+.operation,
+.control {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-basis: 25%;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: solid 1px gray;
+  cursor: pointer;
+}
+
+.digit {
+  background-color: DimGray;
+}
+.digit:hover {
+  background-color: black;
+}
+
+.operation,
+.control {
+  background-color: SandyBrown;
+}
+.operation:hover,
+.control:hover {
+  background-color: Chocolate;
+}
+
+.digit:active,
+.operation:active,
+.control:active {
+  border: solid 4px white;
 }
